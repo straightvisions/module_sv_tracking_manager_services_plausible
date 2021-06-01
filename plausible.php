@@ -39,7 +39,7 @@
 				$this->get_script('default')
 						->set_path('https://plausible.io/js/plausible.js')
 						->set_type('js')
-						->set_custom_attributes(' defer data-domain="'.parse_url(get_site_url())['host'].'"');
+						->set_custom_attributes(' async defer data-domain="'.parse_url(get_site_url())['host'].'"');
 			}
 			
 			return $this;
